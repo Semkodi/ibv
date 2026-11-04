@@ -89,6 +89,6 @@ npm run dev
 ## 👨‍💻 Entwickler
 
 **Semir Borogovac**  
-*Fachinformatiker für Anwendungsentwicklung (IHK Koblenz 2026)*  
+*Fachinformatiker für Anwendungsentwicklung (IHK Koblenz, Abschluss Januar 2027)*  
 - **Website:** [semirborogovac.de](https://semirborogovac.de)  
 - **GitHub:** [@Semkodi](https://github.com/Semkodi)  
