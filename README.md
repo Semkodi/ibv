@@ -1,76 +1,94 @@
 # ⚡ IBV Engelhardt – Industrieberatung & Vertrieb
 
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)
-![React Router](https://img.shields.io/badge/React_Router-7-CA4245?logo=reactrouter&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-semkodi.github.io%2Fibv-ff9a3c?style=for-the-badge&logo=google-chrome&logoColor=white)](https://semkodi.github.io/ibv/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Developer](https://img.shields.io/badge/Entwickler-Semir%20Borogovac-27c93f?style=for-the-badge)](https://semirborogovac.de)
 
-Webplattform für **IBV Engelhardt**, einen Industrievertrieb für **Ferritkerne, Spulen, Drosseln und Übertrager** aus Kassel. Kunden können den Produktkatalog durchsuchen und Produkte direkt in einen Anfragekorb legen.
+> Moderne Webplattform & interaktiver B2B-Produktkatalog für **IBV Engelhardt** (Industrievertrieb für Ferritkerne, Spulen, Drosseln und induktive Bauelemente aus Kassel). Kunden können technische Spezifikationen filtern und Bauteile direkt in einem interaktiven Anfragekorb bündeln.
 
-🌐 **Live-Demo:** https://semkodi.github.io/ibv/
+---
 
-Entwickelt von **Semir Borogovac** als praxisnahes Webprojekt für einen realen Auftraggeber.
+## 🌐 Live-Anwendung & Links
 
-## 🖼️ Projektvorschau
+- **Live-Demo:** [https://semkodi.github.io/ibv/](https://semkodi.github.io/ibv/)
+- **Entwickler-Portfolio:** [https://semirborogovac.de](https://semirborogovac.de)
 
-<!-- TODO: Screenshot einfügen: screenshots/startseite.png -->
+---
 
 ## 📖 Projektübersicht
 
-IBV Engelhardt unterstützt Entwickler, Einkäufer und Unternehmen in ganz Deutschland mit praxisnahen Lösungen rund um induktive Bauteile. Die Website bündelt Produktinformationen, beantwortet häufige technische und beschaffungsbezogene Fragen und macht Anfragen unkompliziert: Produkte auswählen, in den Anfragekorb legen, absenden.
+IBV Engelhardt berät Ingenieure, Entwickler und Einkäufer in der Elektronik- und Automobilindustrie. Die Webanwendung ersetzt traditionelle PDF-Kataloge durch eine dynamische Benutzeroberfläche:
 
-## ✨ Features
+1. **Strukturierter Katalog:** Übersichtliche Kategorisierung (Ferritkerne, Drosseln, SMD-Spulen, Übertrager).
+2. **Interaktiver B2B-Anfragekorb:** Kein klassischer E-Commerce Checkout, sondern ein schlanker Workflow zur Spezifikationsabfrage und Angebotsanforderung.
+3. **Zentrales State Management:** Persistenter Anfragekorb über React Context mit Validierung.
+4. **Technischer Support:** Integrierter FAQ-Bereich für Datenblätter, Kernmaterialien und Lieferzeiten.
 
-- 🏠 Startseite mit Unternehmens- und Leistungsübersicht
-- 📦 Produktkatalog (Ferritkerne, Spulen, Drosseln, Übertrager)
-- 🛒 Anfragekorb – Produkte sammeln und als Anfrage senden
-- ❓ FAQ zu Produkten, Einsatzbereichen und Service
-- 🔐 Admin-Login
-- ⚖️ Impressum & Datenschutz
-- 📱 Responsives Design mit animiertem Mesh-Hintergrund
+---
+
+## ✨ Features & Funktionen
+
+- 🔍 **Dynamischer Bauteile-Katalog:** Schnelle Suche und Filterung nach Bauteil-Kategorien.
+- 🛒 **Anfragekorb-Engine:** Sammeln von Mustern und Serienmengen mit direkter Anfrageübermittlung.
+- 📱 **Responsive Design:** 100 % mobil- und tablet-optimierte Darstellung mit animiertem Mesh-Canvas.
+- 🔐 **Admin-Bereich:** Authentifizierungs-Mock für Katalog- und Bestandsverwaltung.
+- ⚖️ **DSGVO-Konform:** Lokale Assets, semantische HTML5-Struktur und barrierefreie Formulare.
+
+---
 
 ## 🛠 Tech-Stack
 
-| Bereich | Technologie |
-|----------|------------|
-| Frontend | React 19 |
-| Sprache | TypeScript |
-| Routing | React Router 7 |
-| State | React Context (Anfragekorb) |
-| Icons | Lucide React |
-| Build Tool | Vite |
-| Deployment | GitHub Pages |
+| Bereich | Technologie | Beschreibung |
+| :--- | :--- | :--- |
+| **Frontend** | React 19 | Neueste React-Architektur mit performantem Rendering |
+| **Typisierung** | TypeScript | Strikte Typensicherheit für Bauteil-DTOs und Formularzustände |
+| **Routing** | React Router 7 | Client-seitiges Deep-Linking & SPA-Navigation |
+| **State** | React Context API | Globales Zustandsmanagement für den Anfragekorb |
+| **Design & UI** | Tailwind CSS & Lucide Icons | Modulares Utility-Styling und konsistente Vektor-Icons |
+| **Build Tool** | Vite | Ultra-schnelle HMR und optimierte Produktions-Bundles |
+| **Hosting** | GitHub Pages | Automatisierte Bereitstellung |
+
+---
 
 ## 🏗️ Projektstruktur
 
 ```text
 src/
-├── components/      # Navbar, Footer, UI-Komponenten
-├── context/         # Globaler State (Anfragekorb)
+├── components/          # Navbar, Footer, Layout & Modals
+├── context/             # Globaler State (CartContext & Typen)
 ├── pages/
-│   ├── Home.tsx
-│   ├── ProductsPage.tsx   # Produktkatalog
-│   ├── CartPage.tsx       # Anfragekorb (/anfrage)
-│   ├── AdminLogin.tsx
-│   ├── Impressum.tsx
-│   └── Datenschutz.tsx
-├── App.tsx          # Routing
-└── main.tsx
+│   ├── Home.tsx         # Leistungs- & Unternehmensübersicht
+│   ├── ProductsPage.tsx # Dynamischer Bauteil-Katalog
+│   ├── CartPage.tsx     # B2B-Anfragekorb & Formular
+│   ├── AdminLogin.tsx   # Login-Maske
+│   ├── Impressum.tsx    # Rechtliches
+│   └── Datenschutz.tsx  # DSGVO-Konformität
+├── App.tsx              # Routen-Konfiguration
+└── main.tsx             # Einstiegspunkt
 ```
 
-## ⚡ Herausforderungen
-
-Ein Anfrage-Workflow ohne klassischen Shop: Statt Checkout und Bezahlung sammeln Kunden Produkte in einem Anfragekorb, der als unverbindliche Anfrage an den Vertrieb geht. Der Korb-State wird zentral über React Context verwaltet.
+---
 
 ## 🚀 Lokale Entwicklung
 
 ```bash
+# 1. Repository klonen
 git clone https://github.com/Semkodi/ibv.git
 cd ibv
+
+# 2. Abhängigkeiten installieren
 npm install
+
+# 3. Entwicklungsserver starten
 npm run dev
 ```
 
+---
+
 ## 👨‍💻 Entwickler
 
-**Semir Borogovac** – Umschulung zum Fachinformatiker für Anwendungsentwicklung (FIAE)
+**Semir Borogovac**  
+*Fachinformatiker für Anwendungsentwicklung (IHK Koblenz 2026)*  
+- **Website:** [semirborogovac.de](https://semirborogovac.de)  
+- **GitHub:** [@Semkodi](https://github.com/Semkodi)  
