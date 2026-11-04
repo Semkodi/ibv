@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & Build
 node_modules
 dist
 dist-ssr
@@ -23,13 +24,11 @@ dist-ssr
 *.sln
 *.sw?
 
-# Sensitive data and project files
+# Environment
 .env
 .env.*
-README.md
-agents.md
-implementation_plan.md
-task.md
-walkthrough.md
-.gemini/
-brain/
+
+# Static assets & Documentation
+*.pdf
+*.md
+!README.md
